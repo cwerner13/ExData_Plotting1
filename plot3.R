@@ -32,7 +32,7 @@ data               <- data_all[(data_all$Date == as.Date("01/02/2007", "%d/%m/%Y
 
 png(filename = "plot3.png",
     width = 480, height = 480, units = "px", pointsize = 12,
-    bg = "transparent",  res = NA, type ="windows")
+    bg = "white",  res = NA, type ="windows")
 
     plot( data$timestamp, as.numeric(data$Sub_metering_1),type="n"
         , main="", xlab = "", ylab = "Energy sub metering")

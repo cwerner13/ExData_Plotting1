@@ -32,7 +32,7 @@ data               <- data_all[(data_all$Date == as.Date("01/02/2007", "%d/%m/%Y
 
 png(filename = "plot2.png",
     width = 480, height = 480, units = "px", pointsize = 12,
-    bg = "transparent",  res = NA, type ="windows")
+    bg = "white",  res = NA, type ="windows")
 
     plot( data$timestamp, as.numeric(data$Global_active_power),type="n"
         , main="", xlab = "", ylab = "Global Active Power (kilowatts)")
